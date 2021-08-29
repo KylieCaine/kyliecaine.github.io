@@ -1,0 +1,192 @@
+/* base styling ---------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #777;
+    margin: 0;
+    padding: 0;
+}
+
+hi, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: 600;
+    color: #111;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 5.2vw;
+}
+
+h1 .sm {
+    font-size: 0.5em;
+}
+
+h2 {
+    font-size: 2.3vw;
+    text-transform: uppercase;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 200px;
+    background: #fff;
+    border: none;
+    padding: 0.5em 1.5em;
+    font-weight: 600;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0,1);
+    font-size: 1em;
+}
+
+button.is-big {
+    font-size: 1.2em;
+}
+
+button .fa-angle-right,
+button .fa-angle-left {
+    color: #1be0f1;
+    margin-left: 0.5em;
+}
+
+/* full page hacks --------------------- */
+/* nav */
+/* this sets the colour and font of the navigation labels */
+#fp-nav ul li .fp-tooltip {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* slides nav*/
+.fp-slidesNav {
+    left: 17% !important;
+    bottom: 15% !important;
+}
+/* section */
+.section {
+    height: 100vh;
+}
+
+.section .fp-tableCell {
+    padding: 2em;
+}
+
+/* home section -------------------------- */
+/* vw stands for view port width */
+
+#logo {
+    position: absolute;
+    left: 7%;
+    top: 15%;
+    color: #fff;
+    width: 30%;
+}
+
+.section-home .bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #34abdf 0%, white 100%);
+}
+
+#camera {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    width: 45%;
+}
+
+#camera-shadow {
+    position: absolute;
+    right: 1%;
+    width: 43%;
+    top: 54%;
+}
+
+.section-home .content {
+    position: absolute;
+    width: 38%;
+    left: 7%;
+    top: 50%;
+}
+
+/* the big three section ---------------------- */
+
+.section-big-three {
+    text-align: center;
+}
+
+.section-big-three .fp-tableCell {
+    vertical-align: top;
+}
+
+.big-three-cols {
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    margin-bottom: 0.5em;
+}
+
+.bt-col {
+    text-align: center;
+    flex-grow: 1;
+    margin: 2%;
+    width: 33.3%;
+}
+
+.bt-col .bt-col-img {
+    width: 40%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 1.5em;
+}
+
+.section-big-three .content {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.2em;
+}
+
+.section-big-three .content p {
+    margin-bottom: 1.8em;
+}
+
+/* aperture section ------------------------ */
+
+.section-aperture {
+    background: linear-gradient(50deg, #DEDDDE 0%, white 100%);
+}
+
+.section-aperture .slide {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.section-aperture .slide .content {
+    padding-right: 30%;
+    position: relative;
+}
+
+
+
+.slide-aperture-1 .slide-img {
+    width: 170px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+/* aperture slide 2 and 3 img */
+.slide-aperture-2 .slide-img,
+.slide-aperture-3 .slide-img {
+    width: 279px;
+    position: absolute;
+    right: -7%;
+    top: -36%;
+}
